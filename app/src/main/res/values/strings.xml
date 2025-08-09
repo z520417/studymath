@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">数学练习器</string>
+    
+    <!-- Navigation -->
+    <string name="nav_practice">练习</string>
+    <string name="nav_wrong_questions">错题本</string>
+    <string name="nav_teaching">方法教学</string>
+    <string name="nav_settings">设置</string>
+    
+    <!-- Operations -->
+    <string name="operation_addition">加法</string>
+    <string name="operation_subtraction">减法</string>
+    <string name="operation_multiplication">乘法</string>
+    <string name="operation_division">除法</string>
+    
+    <!-- Common -->
+    <string name="start">开始</string>
+    <string name="next">下一题</string>
+    <string name="submit">提交</string>
+    <string name="correct">正确！</string>
+    <string name="wrong">答错了，再试试</string>
+    <string name="answer">答案</string>
+    <string name="your_answer">你的答案</string>
+    <string name="difficulty">难度</string>
+    <string name="range">数字范围</string>
+    <string name="back">返回</string>
+    <string name="save">保存</string>
+    <string name="cancel">取消</string>
+    
+    <!-- Difficulty levels -->
+    <string name="difficulty_easy">简单</string>
+    <string name="difficulty_medium">中等</string>
+    <string name="difficulty_hard">困难</string>
+    
+    <!-- Teaching -->
+    <string name="step_by_step">分步解答</string>
+    <string name="method_explanation">方法说明</string>
+    
+    <!-- Statistics -->
+    <string name="total_questions">总题数</string>
+    <string name="correct_answers">正确数</string>
+    <string name="accuracy_rate">正确率</string>
+    <string name="wrong_questions_count">错题数量</string>
+</resources>

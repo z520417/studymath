@@ -1,0 +1,439 @@
+# ===================================
+# 数学练习器Android应用 .gitignore
+# ===================================
+# 适用于使用Jetpack Compose、Room数据库和现代Android开发工具链的项目
+
+# ===================================
+# Android项目标准忽略项
+# ===================================
+
+# 构建输出目录
+build/
+*/build/
+app/build/
+.gradle/
+gradle-app.setting
+
+# Gradle包装器（可选择性忽略）
+# gradle/wrapper/gradle-wrapper.jar
+# gradle/wrapper/gradle-wrapper.properties
+
+# 本地配置文件（包含敏感信息）
+local.properties
+gradle.properties
+keystore.properties
+
+# Android Studio生成的文件
+.idea/
+*.iml
+*.ipr
+*.iws
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/assetWizardSettings.xml
+.idea/dictionaries
+.idea/libraries
+.idea/jarRepositories.xml
+.idea/compiler.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/scopes/scope_settings.xml
+.idea/vcs.xml
+.idea/jsLibraryMappings.xml
+.idea/datasources.xml
+.idea/datasources/
+.idea/sqlDataSources.xml
+.idea/dynamic.xml
+.idea/uiDesigner.xml
+.idea/dbnavigator.xml
+
+# Android Studio 3.1+ 序列化缓存文件
+.idea/caches/build_file_checksums.ser
+
+# ===================================
+# Kotlin/Java开发忽略项
+# ===================================
+
+# 编译生成的字节码文件
+*.class
+
+# JAR文件
+*.jar
+
+# WAR文件
+*.war
+
+# EAR文件
+*.ear
+
+# APK和AAB文件
+*.apk
+*.aab
+
+# DEX文件
+*.dex
+
+# 调试和发布密钥文件
+*.jks
+*.keystore
+key.properties
+release.keystore
+debug.keystore
+
+# ProGuard生成的文件
+proguard/
+proguard-rules.pro
+
+# R8生成的文件
+mapping.txt
+
+# ===================================
+# 开发工具相关
+# ===================================
+
+# Android Studio配置
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IntelliJ IDEA
+out/
+.idea_modules/
+
+# Eclipse
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+.settings/
+.loadpath
+.recommenders
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ===================================
+# 临时文件和缓存
+# ===================================
+
+# 系统临时文件
+*.tmp
+*.temp
+*.log
+
+# Android Lint
+lint-results.html
+lint-results.xml
+lint-report.html
+
+# Android Studio缓存
+.externalNativeBuild/
+.cxx/
+*.hprof
+
+# NDK
+obj/
+.externalNativeBuild
+
+# CMake
+cmake-build-*/
+
+# ===================================
+# 测试和分析相关
+# ===================================
+
+# 单元测试结果
+/test-results/
+/androidTest-results/
+
+# 测试覆盖率报告
+/coverage/
+jacoco.exec
+*.exec
+
+# Espresso测试截图
+screenshots/
+
+# UI自动化测试结果
+test-results/
+build/reports/
+
+# 性能分析文件
+*.trace
+*.hprof
+*.prof
+
+# Firebase测试实验室结果
+firebase-debug.log
+.firebase/
+
+# ===================================
+# 数据库和数据文件
+# ===================================
+
+# Room数据库文件（本地开发）
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# 数据库备份文件
+*.backup
+*.bak
+
+# 本地数据文件
+/data/
+/databases/
+
+# ===================================
+# 日志和调试文件
+# ===================================
+
+# 应用日志文件
+*.log
+logs/
+log/
+
+# 调试输出
+debug.log
+error.log
+
+# Crashlytics符号文件
+crashlytics-build.properties
+com_crashlytics_export_strings.xml
+
+# ===================================
+# 依赖和包管理
+# ===================================
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# ===================================
+# 版本控制和发布
+# ===================================
+
+# Git相关
+.git/
+*.orig
+
+# SVN相关
+.svn/
+
+# 发布相关文件
+release/
+dist/
+*.zip
+*.tar.gz
+
+# 签名文件
+*.asc
+
+# ===================================
+# 项目特定忽略项
+# ===================================
+
+# 数学练习器应用特定文件
+/app/src/main/assets/questions.json
+/app/src/main/assets/test_data/
+
+# 用户生成的内容
+user_data/
+practice_history/
+
+# 配置文件模板的实际配置
+config.properties
+app_config.json
+
+# 第三方SDK配置
+google-services.json
+firebase_config.json
+
+# 本地开发环境配置
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# 性能测试结果
+benchmark-results/
+performance-reports/
+
+# 文档生成文件
+/docs/build/
+/docs/_build/
+
+# 备份文件
+*.backup
+*~
+
+# ===================================
+# 操作系统相关
+# ===================================
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ===================================
+# 网络和安全
+# ===================================
+
+# API密钥和敏感配置
+api_keys.properties
+secrets.properties
+*.pem
+*.p12
+*.crt
+*.key
+
+# OAuth配置
+oauth_config.json
+client_secrets.json
+
+# ===================================
+# 其他工具
+# ===================================
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# Bundle artifact
+*.jsbundle
+
+# CocoaPods (如果使用React Native)
+ios/Pods/
+
+# React Native (如果混合开发)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Flipper
+android/app/src/debug/java/com/*/ReactNativeFlipper.java
+
+# ===================================
+# 自定义忽略项
+# ===================================
+
+# 在此添加项目特定的忽略规则
+# 例如：特定的配置文件、临时脚本等
+
+# 开发者个人配置
+.personal/
+personal_notes.md
+
+# 临时实验代码
+experimental/
+temp_features/
+
+# 本地脚本
+local_scripts/
+*.local.sh
+
+# 文档草稿
+draft_docs/
+*.draft.md
+/PROJECT_SUMMARY.md
+/RELEASE_BUILD_SUMMARY.md
+/SIGNED_RELEASE_SUMMARY.md
+/SOLUTION_STEPS_LAYOUT_FIX.md
+/SYSTEM_KEYBOARD_AUTO_SUBMIT_IMPLEMENTATION_SUMMARY.md
+/ANDROID_ICON_IMPLEMENTATION.md
+/ANSWER_FEEDBACK_IMPLEMENTATION_SUMMARY.md
+/ANSWER_FEEDBACK_SYSTEM_FIX_SUMMARY.md
+/APP_ICON_DESIGN.md
+/COMPACT_FLOATING_KEYBOARD_OPTIMIZATION_SUMMARY.md
+/CUSTOMKEYBOARD_REMOVAL_AND_TRANSPARENT_BACKGROUND_SUMMARY.md
+/DIALOG_BACKGROUND_SCRIM_FIX_SUMMARY.md
+/FINAL_LAYOUT_AND_KEYBOARD_FIXES.md
+/FLOATING_KEYBOARD_IMPLEMENTATION_SUMMARY.md
+/HORIZONTAL_LAYOUT_IMPLEMENTATION.md
+/ICON_IMPLEMENTATION_SUMMARY.md
+/KEYBOARD_AND_SOLUTION_FIXES.md
+/KEYBOARD_AND_STEPS_FIXES.md
+/KEYBOARD_COMPACT_OPTIMIZATION.md
+/KEYBOARD_HEIGHT_FIX.md
+/KEYBOARD_TEXT_FIX.md
+/MATH_TRAINER_DETAILED_IMPLEMENTATION_PLAN.md
+/MATH_TRAINER_ITERATION_ROADMAP.md
+/MIXED_EXPRESSION_SOLUTION_STEPS_FIX.md
+/MIXED_PRACTICE_IMPROVEMENTS_SUMMARY.md
+/NEW_FEATURES_SUMMARY.md
+/.doc
