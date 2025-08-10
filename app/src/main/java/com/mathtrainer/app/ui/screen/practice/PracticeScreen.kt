@@ -683,27 +683,36 @@ private fun AnswerInputWithFeedback(
                 }
             )
         } else {
-            // 使用系统键盘
-            OutlinedTextField(
-                value = userAnswer,
-                onValueChange = onAnswerChange,
-                label = { Text("你的答案") },
-                keyboardOptions = KeyboardOptions(
-                    keyboardType = KeyboardType.Number,
-                    imeAction = ImeAction.Done
-                ),
-                keyboardActions = KeyboardActions(
-                    onDone = {
-                        // 系统键盘确认时自动提交答案
-                        if (userAnswer.isNotBlank() && !isAnswered) {
-                            onSubmitAnswer()
-                        }
-                    }
-                ),
-                enabled = !isAnswered,
+            // 使用系统键盘 + 语音输入
+            Row(
                 modifier = modifier,
-                singleLine = true
-            )
+                horizontalArrangement = Arrangement.spacedBy(8.dp),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                // 答案输入框
+                OutlinedTextField(
+                    value = userAnswer,
+                    onValueChange = onAnswerChange,
+                    label = { Text("你的答案") },
+                    keyboardOptions = KeyboardOptions(
+                        keyboardType = KeyboardType.Number,
+                        imeAction = ImeAction.Done
+                    ),
+                    keyboardActions = KeyboardActions(
+                        onDone = {
+                            // 系统键盘确认时自动提交答案
+                            if (userAnswer.isNotBlank() && !isAnswered) {
+                                onSubmitAnswer()
+                            }
+                        }
+                    ),
+                    enabled = !isAnswered,
+                    modifier = Modifier.weight(1f),
+                    singleLine = true
+                )
+
+
+            }
         }
 
         // 答案反馈（只在回答后显示）

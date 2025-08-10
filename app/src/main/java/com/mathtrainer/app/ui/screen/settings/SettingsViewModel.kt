@@ -100,7 +100,8 @@ class SettingsViewModel(
             repository.updateUserSettings(updatedSettings)
         }
     }
-    
+
+
     /**
      * 清除练习记录
      */
